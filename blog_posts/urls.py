@@ -6,5 +6,8 @@ from . import views
 app_name = 'blog_posts'
 urlpatterns = [
     # Home page
-    path('', views.index, name='index')
+    path('', views.index, name='index'),
+    # Page that shows all categories
+    path('categories/', views.categories, name='categories'),
+    # page 
 ]
